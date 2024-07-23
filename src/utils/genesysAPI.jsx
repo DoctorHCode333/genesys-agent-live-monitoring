@@ -4,7 +4,7 @@ import platformClient from 'purecloud-platform-client-v2';
 const client = platformClient.ApiClient.instance;
 const { clientId, redirectUri } = clientConfig;
 
-client.setEnvironment(platformClient.PureCloudRegionHosts.us_east_1); // Genesys Cloud region
+client.setEnvironment(platformClient.PureCloudRegionHosts.us_west_2); // Genesys Cloud region
 
 const userApi = new platformClient.UsersApi();
 const qualityApi = new platformClient.QualityApi();
